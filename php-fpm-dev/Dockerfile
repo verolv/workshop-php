@@ -1,4 +1,4 @@
-FROM php-fpm-base
+FROM verolv/workshop-php:7.2
 RUN pecl install xdebug && docker-php-ext-enable xdebug
 RUN apt-get update \
 	&& apt-get -y install unzip zlib1g-dev \
